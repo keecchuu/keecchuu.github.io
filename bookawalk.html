@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book a Walk - WalkBuddy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/templatemo-business-oriented.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Image with Logo -->
+    <div id="parallax-1" class="parallax-window walkbuddy-header-image" data-parallax="scroll" data-image-src="img/header.jpg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="walkbuddy-header-logo">
+                        <i class="fas fa-paw"></i>
+                        <span class="walkbuddy-logo-text">WalkBuddy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="walkbuddy-nav-container-outer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg walkbuddy-nav" id="tm-main-nav">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav" 
+                            aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="fas fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-nav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link walkbuddy-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link walkbuddy-nav-link" href="services&rates.html">Services & Rates</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link walkbuddy-nav-link" href="testimonials.html">Testimonials</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link walkbuddy-nav-link" href="bookawalk.html">Book a Walk <span class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>                            
+                        </div>                        
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="walkbuddy-page-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-header-title">Book a Walk</h1>
+                    <p class="page-header-subtitle">Schedule your dog's next adventure with WalkBuddy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="walkbuddy-booking-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="booking-form-card">
+                        <form id="booking-form" class="walkbuddy-booking-form">
+                            <!-- Pet Owner Name -->
+                            <div class="form-group">
+                                <label for="owner-name" class="form-label">Pet Owner Name *</label>
+                                <input type="text" class="form-control walkbuddy-form-control" id="owner-name" name="owner-name" required>
+                            </div>
+
+                            <!-- Dog's Name and Breed -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="dog-name" class="form-label">Dog's Name *</label>
+                                        <input type="text" class="form-control walkbuddy-form-control" id="dog-name" name="dog-name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="dog-breed" class="form-label">Breed *</label>
+                                        <input type="text" class="form-control walkbuddy-form-control" id="dog-breed" name="dog-breed" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Walk Service Selection -->
+                            <div class="form-group">
+                                <label class="form-label">Walk Service *</label>
+                                <div class="walk-service-options">
+                                    <div class="service-option">
+                                        <input type="radio" id="walk-15" name="walk-service" value="15" required>
+                                        <label for="walk-15" class="service-option-label">
+                                            <span class="service-option-title">15-Minute Walk</span>
+                                            <span class="service-option-price">€15,00</span>
+                                        </label>
+                                    </div>
+                                    <div class="service-option service-option-popular">
+                                        <input type="radio" id="walk-30" name="walk-service" value="30" required>
+                                        <label for="walk-30" class="service-option-label">
+                                            <span class="service-option-badge">Most Popular</span>
+                                            <span class="service-option-title">30-Minute Walk</span>
+                                            <span class="service-option-price">€25,00</span>
+                                        </label>
+                                    </div>
+                                    <div class="service-option">
+                                        <input type="radio" id="walk-60" name="walk-service" value="60" required>
+                                        <label for="walk-60" class="service-option-label">
+                                            <span class="service-option-title">60-Minute Walk</span>
+                                            <span class="service-option-price">€40,00</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Preferred Date & Time -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="preferred-date" class="form-label">Preferred Date *</label>
+                                        <input type="date" class="form-control walkbuddy-form-control" id="preferred-date" name="preferred-date" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="preferred-time" class="form-label">Preferred Time *</label>
+                                        <input type="time" class="form-control walkbuddy-form-control" id="preferred-time" name="preferred-time" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="street-address" class="form-label">Street Address *</label>
+                                        <input type="text" class="form-control walkbuddy-form-control" id="street-address" name="street-address" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="zip-code" class="form-label">Zip Code *</label>
+                                        <input type="text" class="form-control walkbuddy-form-control" id="zip-code" name="zip-code" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Contact Information -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="contact-email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control walkbuddy-form-control" id="contact-email" name="contact-email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="contact-phone" class="form-label">Phone *</label>
+                                        <input type="tel" class="form-control walkbuddy-form-control" id="contact-phone" name="contact-phone" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="form-group text-center mt-4">
+                                <button type="submit" class="btn walkbuddy-btn-submit">Book My Walk</button>
+                            </div>
+                        </form>
+
+                        <!-- Success Message (hidden by default) -->
+                        <div id="success-message" class="booking-success-message" style="display: none;">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Thanks! We'll be in touch to confirm your walk!</h3>
+                            <p>We'll contact you shortly to finalize the details and confirm your booking.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reminder Section -->
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="booking-reminder-card">
+                        <h4 class="reminder-title">
+                            <i class="fas fa-info-circle"></i> Booking Reminders
+                        </h4>
+                        <ul class="reminder-list">
+                            <li><i class="fas fa-check"></i> Please book at least 24 hours in advance</li>
+                            <li><i class="fas fa-check"></i> We'll send a confirmation email within 2 hours</li>
+                            <li><i class="fas fa-check"></i> Invoice for payments will be emailed to the email you entered</li>
+                            <li><i class="fas fa-check"></i> Your walker will arrive within a 15-minute window</li>
+                            <li><i class="fas fa-check"></i> Photo updates will be sent during the walk</li>
+                            <li><i class="fas fa-check"></i> GPS tracking available for your peace of mind</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="walkbuddy-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 mb-4 mb-md-0">
+                    <p class="footer-text">
+                        Copyright &copy; 2025 <span class="footer-brand">WalkBuddy</span>
+                        - Happy paws, happy days.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 text-right">
+                    <a href="https://fb.com" class="walkbuddy-social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://instagram.com" class="walkbuddy-social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com" class="walkbuddy-social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#parallax-1').parallax({ imageSrc: 'img/header.jpg' });
+
+            // Set minimum date to today
+            var today = new Date().toISOString().split('T')[0];
+            $('#preferred-date').attr('min', today);
+
+            // Update visual styling when radio button selection changes
+            function updateServiceVisualState() {
+                // Remove selected class from all options
+                $('.service-option').removeClass('selected');
+                
+                // Add selected class to the checked radio's parent
+                var $checkedRadio = $('input[name="walk-service"]:checked');
+                if ($checkedRadio.length > 0) {
+                    $checkedRadio.closest('.service-option').addClass('selected');
+                }
+            }
+
+            // When a radio button changes (native HTML behavior handles single selection)
+            $('input[name="walk-service"]').on('change', function() {
+                // Radio buttons with same name automatically enforce single selection
+                // Just update the visual state
+                updateServiceVisualState();
+            });
+
+            // Make the entire service option card clickable (except when clicking label)
+            $('.service-option').on('click', function(e) {
+                // If clicking on the label or its children, let the label handle it naturally
+                if ($(e.target).closest('label').length > 0) {
+                    return; // Label will handle via 'for' attribute
+                }
+                
+                // For clicks anywhere else on the card, select this option
+                var $radio = $(this).find('input[type="radio"]');
+                $radio.prop('checked', true).trigger('change');
+            });
+
+            // Initial visual state update - ensure nothing is selected initially
+            $('.service-option').removeClass('selected');
+            $('input[name="walk-service"]').prop('checked', false);
+            updateServiceVisualState();
+            
+            // Safety check: ensure only one radio is checked (native behavior should handle this)
+            // But we'll verify every 100ms as a backup
+            setInterval(function() {
+                var $checked = $('input[name="walk-service"]:checked');
+                if ($checked.length > 1) {
+                    // If somehow multiple are checked, keep only the first
+                    $checked.slice(1).prop('checked', false);
+                    updateServiceVisualState();
+                }
+            }, 100);
+
+            // Handle form submission
+            $('#booking-form').on('submit', function(e) {
+                e.preventDefault();
+                
+                // Validate that exactly one walk service is selected
+                var selectedService = $('input[name="walk-service"]:checked');
+                if (selectedService.length !== 1) {
+                    alert('Please select exactly one walk service.');
+                    updateServiceVisualState();
+                    return;
+                }
+                
+                // Hide the form
+                $('#booking-form').slideUp(300);
+                
+                // Show success message
+                $('#success-message').delay(300).slideDown(400);
+            });
+        });
+    </script>
+</body>
+
+</html>
